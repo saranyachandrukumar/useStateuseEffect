@@ -1,0 +1,19 @@
+import React, { useState } from 'react';
+
+function ExampleComponent() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>
+        Increment Count
+      </button>
+      <button onClick={() => setCount(count - 1)}>
+        Decrement Count
+      </button> 
+    </div>
+  );
+}
+
+export default ExampleComponent;
